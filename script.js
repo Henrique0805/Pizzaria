@@ -10,7 +10,7 @@ const selectorAll = (e)=> {
 }
 
 //Listagem das pizzas
-pizzaJson.map((item, index)=>{
+pizzaJson.forEach((item, index)=>{
     let pizzaItem = selector('.models .pizza-item').cloneNode(true);
 
     pizzaItem.setAttribute('data-key', index);
